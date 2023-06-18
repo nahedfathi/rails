@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @track %>
+
+<div>
+  <%= link_to "Edit this track", edit_track_path(@track) %> |
+  <%= link_to "show all tracks", tracks_path %>
+
+  <%= button_to "delete track", @track, method: :delete %>
+</div>
